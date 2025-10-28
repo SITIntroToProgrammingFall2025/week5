@@ -48,6 +48,7 @@ jobs:
           test-name: hw5-1 Test 1
           command: bash -lc 'test -x ./hw5-1 && printf "%s\n" 40 | ./hw5-1 || echo "__MISSING_BINARY__"'
           expected-output: |
+            max?
             1 2 4 8 16 32
           comparison-method: exact
           timeout: 10
@@ -60,6 +61,7 @@ jobs:
           test-name: hw5-1 Test 2
           command: bash -lc 'test -x ./hw5-1 && printf "%s\n" 30 | ./hw5-1 || echo "__MISSING_BINARY__"'
           expected-output: |
+            max?
             1 2 4 8 16
           comparison-method: exact
           timeout: 10
@@ -73,6 +75,7 @@ jobs:
           test-name: hw5-2 Test 1
           command: bash -lc 'test -x ./hw5-2 && printf "%s\n" 70 | ./hw5-2 || echo "__MISSING_BINARY__"'
           expected-output: |
+            max?
             1 2 5 7 10 14 35 70
           comparison-method: exact
           timeout: 10
@@ -85,6 +88,7 @@ jobs:
           test-name: hw5-2 Test 2
           command: bash -lc 'test -x ./hw5-2 && printf "%s\n" 35 | ./hw5-2 || echo "__MISSING_BINARY__"'
           expected-output: |
+            max?
             1 5 7 35
           comparison-method: exact
           timeout: 10
@@ -127,6 +131,7 @@ jobs:
           test-name: ahw5-1 Test 1
           command: bash -lc 'test -x ./ahw5-1 && printf "%s\n" "2 9" | ./ahw5-1 || echo "__MISSING_BINARY__"'
           expected-output: |
+            Enter n and m:
             Numbers of steps taken: 3
           comparison-method: exact
           timeout: 10
@@ -139,6 +144,7 @@ jobs:
           test-name: ahw5-1 Test 2
           command: bash -lc 'test -x ./ahw5-1 && printf "%s\n" "10 1" | ./ahw5-1 || echo "__MISSING_BINARY__"'
           expected-output: |
+            Enter n and m:
             Cannot transform 10 to 1
           comparison-method: exact
           timeout: 10
